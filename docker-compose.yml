@@ -9,12 +9,10 @@ services:
   db:
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_DATABASE: mydatabase
-      MYSQL_USER: myuser
-      MYSQL_PASSWORD: mypassword
-    ports:
-      - "3306:3306"
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: farmacia
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
     volumes:
       - db-data:/var/lib/mysql
 volumes:
